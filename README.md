@@ -4,11 +4,12 @@ This is a summary of the pluralsight course [TypeScript: The Big Picture][1]
 
 ***
 
-### Benefits
+## Benefits
+
 + Typescript supports static typing
 + Typescript supports type inference
 + Typescript provides parameter and automatic function invocation checking
-+ Typescript helps with code organisation - classes, namespaces, 
++ Typescript helps with code organisation - classes, namespaces,
   modules, interfaces
 + Typescript provides tooling support - static type analysis,
   code completion, detect unused data and unreachable code,
@@ -18,7 +19,8 @@ This is a summary of the pluralsight course [TypeScript: The Big Picture][1]
   
 ***
 
-### Installing and Compiling
+## Installing and Compiling
+
 + The Typescript compiler is `tsc`
 + A typescript file has the extension `.ts`
 + Typescript transpiles (translate + compile) to Javascript
@@ -32,7 +34,8 @@ tsc -h  // help
 
 ***
 
-### Compiler options
+## Compiler options
+
 + `target` - specify ECMAScript version
 + `outDir` - location of the output file
 + `outFile` - name of the output file
@@ -45,12 +48,12 @@ tsc --target es2015 --outDir js script.js
 
 ***
 
-### Configuration
+## Configuration
+
 + `tsc` checks for a `tsconfig.json` config file when run
 + `tsc` uses default settings if config file not found
   + compiles to `es3`
   + stores transpiled `.js` file in the same location as `.ts` file
-  
 
 ```TypeScript
 tsc --init    // generate an editable config file
@@ -59,7 +62,8 @@ tsc           // run tsc to compile without providing filename
 
 ***
 
-### Use case
+## Use case
+
 + Typescript is a superset of Javascript
 + All Javascript code is valid in Typescript
 + Use colon to explicitly specify variable types, return types
@@ -73,6 +77,5 @@ function myfunction(name: string, age: int) : void {}
 ***
 
 ![big-picture-certification](typescript1.png)
-
 
 [1]: https://www.pluralsight.com/courses/typescript-big-picture
